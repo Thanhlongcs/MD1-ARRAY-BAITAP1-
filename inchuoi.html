@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+</body>
+<script>
+    let text ="asaAaGJas"
+    let hoa ="QWERTYUIOPASDFGHJKLZXCVBNM"
+    let thuong="qwertyuiopasdfghjklzxcvbnm"
+    let result=[]
+    for(let i=0;i<text.length;i++){
+        if(hoa.indexOf(text[i])===-1){
+            result.push(text[i].toUpperCase())
+        }else if(thuong.indexOf(text[i])===-1){
+            result.push(text[i].toLowerCase())
+        }else{
+            result.push(text[i])
+        }
+    }
+    console.log(result.join(""))
+    console.log(text)
+</script>
+</html>
